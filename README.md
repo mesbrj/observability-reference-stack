@@ -48,7 +48,7 @@ Prometheus serves for metrics collection, querying and alerting, ensuring that a
 
 ## Implementation Examples
 
-* [**GOdigital-book-looker**](examples/GOdigital-book-looker/README.md)
+* [**GOdigital-book-looker**](https://github.com/mesbrj/GOdigital-book-looker)
     - A text and metadata extraction pipeline using [Apache Tika](https://tika.apache.org/).
     - Pub/Sub Message Architecture using the [Kafka v4](https://hub.docker.com/r/bitnami/kafka) broker.
     - Golang producer ([kafka-go](https://github.com/segmentio/kafka-go)) and consumer ([IBM/sarama](https://github.com/IBM/sarama)).
