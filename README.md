@@ -57,7 +57,5 @@ Prometheus serves for metrics collection, querying and alerting, ensuring that a
     - A distributed-service for World information retrieval, processing and management (weather, clock, geolocation, local information, conversion, etc.).
     - JSON RPC Protocol using [RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-six-go) asynchronous queues for RPC communication.
     - Golang RPC client stub (RabbitMQ publisher) / [Golang fuego](https://github.com/go-fuego/fuego) Public RESTful (HATEOAS) OpenAPI (RPC service simplified abstraction for users interface/integration).
-    - Golang RPC server skeleton worker (RabbitMQ subscriber).
+    - Golang RPC server skeleton worker (RabbitMQ subscriber). [Memcached](https://memcached.org/) for workers caching.
     - Java RPC server implementation using [Spring Boot](https://spring.io/) for Web Services, [MongoDB](https://spring.io/projects/spring-data-mongodb) for data persistence and [Hazelcast](https://hazelcast.com/community-edition-projects/downloads/) for real-time in-memory data grid and distributed caching.
-
-
