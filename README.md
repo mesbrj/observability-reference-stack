@@ -32,9 +32,10 @@ Prometheus serves for metrics collection, querying and alerting, ensuring that a
                                 Logs v           |                         v traces / metrics                   v
                     |-------------------|   |---------------------|   |--------------------------------------------|
                     |   Grafana Loki:   |   |    Prometheus:      |   |     Apache skywalking: Distributed APM     |
-                    |   logging and     |   |  General metrics,   |   |--------------------------------------------|
-                    |   aggregation     |   |  time-series,       |
-                    |-------------------|   |  alerting, PromQL   |
+                    |   logging and     |   |  metrics,           |   |--------------------------------------------|
+                    |   aggregation     |   |  time-series,       |                         ^ Prometheus Exporter
+                    |-------------------|   |  alerting, PromQL   |                         | endpoint
+                                            |  querying           |_________________________|
                                             |---------------------|
                                                     |
                                                     |
@@ -50,6 +51,7 @@ Prometheus serves for metrics collection, querying and alerting, ensuring that a
 
 * [**GOdigital-book-looker**](https://github.com/mesbrj/GOdigital-book-looker) **Golang instrumentation**
     - A text and metadata extraction pipeline using [Apache Tika](https://tika.apache.org/).
+    - [Minio](https://www.min.io/) S3 storage for files and Tika outputs.
     - Pub/Sub Message Architecture using the [Kafka v4](https://hub.docker.com/r/bitnami/kafka) broker.
     - Golang producer ([kafka-go](https://github.com/segmentio/kafka-go)) and consumer ([IBM/sarama](https://github.com/IBM/sarama)).
 >
