@@ -23,13 +23,13 @@ Prometheus serves for metrics collection, querying and alerting, ensuring that a
                                 |--------------------------------------|
                                             ^
                                             |
-                                            |
-|-----------------------------|    |------------------------------------------|     |-------------------------------------------------|
-| OTel SDK (go, python, java) |--->|          Grafana Alloy (collector)       |     | Skywalking Agents (go, python, java, nginx lua) |
-|-----------------------------|    |------------------------------------------|     |-------------------------------------------------|
-                                     |           ^ Prometheus Exporter     |                                    |
-                           Processed |           | Endpoint                | HTTP/OTel:                         |
-                                Logs v           |                         v traces / metrics                   v
+                                            |                                       |-----------------------------|
+|-----------------------------|    |------------------------------------------|     | Skywalking Agents:          |
+| OTel SDK (go, python, java) |--->|          Grafana Alloy (collector)       |     | go, python, java, nginx lua |
+|-----------------------------|    |------------------------------------------|     |-----------------------------|
+                                     |           ^ Prometheus Exporter     |                                  |
+                           Processed |           | Endpoint                | HTTP/OTel:                       |
+                                Logs v           |                         v traces / metrics                 v
                     |-------------------|   |---------------------|   |--------------------------------------------|
                     |   Grafana Loki:   |   |    Prometheus:      |   |     Apache skywalking: Distributed APM     |
                     |   logging and     |   |  metrics,           |   |--------------------------------------------|
