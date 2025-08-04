@@ -48,12 +48,12 @@ Prometheus serves for metrics collection, querying and alerting, ensuring that a
 
 ## Implementation Examples
 
-* [**GOdigital-book-looker**](https://github.com/mesbrj/GOdigital-book-looker)
+* [**GOdigital-book-looker**](https://github.com/mesbrj/GOdigital-book-looker) **Golang instrumentation**
     - A text and metadata extraction pipeline using [Apache Tika](https://tika.apache.org/).
     - Pub/Sub Message Architecture using the [Kafka v4](https://hub.docker.com/r/bitnami/kafka) broker.
     - Golang producer ([kafka-go](https://github.com/segmentio/kafka-go)) and consumer ([IBM/sarama](https://github.com/IBM/sarama)).
 >
-* **world-info-ds** (not started yet)
+* **world-info-ds** (not started yet) **Golang and Java instrumentation**
     - A distributed-service for World information retrieval, processing and management (weather, clock, geolocation, local information, conversion, etc.).
     - JSON RPC Protocol using [RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-six-go) asynchronous queues for RPC communication.
     - Golang RPC client stub (RabbitMQ publisher) / [Golang fuego](https://github.com/go-fuego/fuego) Public RESTful (HATEOAS) OpenAPI (RPC service simplified abstraction for users interface/integration).
