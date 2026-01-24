@@ -1,6 +1,6 @@
 # Implementation Examples
 
-- https://github.com/mesbrj/OAuth2-Knowledge-Base
+- https://github.com/mesbrj/OpenTelemetry-knowledge-base
 
 # Observability Reference Stack (1)
 
